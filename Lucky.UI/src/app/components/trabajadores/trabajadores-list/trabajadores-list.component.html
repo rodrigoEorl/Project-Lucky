@@ -1,0 +1,37 @@
+
+<div class="container my-5">
+    <div class="row">
+        <div class="col-md-3" style="text-align: center;">
+            <h1 class="mb-3">Trabajadores</h1>
+        </div>
+        <div class="col-md-9">
+        <button class="btn btn-sm btn-success" style="margin-top: 15px;" routerLink="trabajadores/agregar">Agregar trabajador</button>
+        </div>
+    </div>
+    <br/>
+    <table class="table" *ngIf="trabajadores && trabajadores.length > 0">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nro Documento</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Sexo</th>
+                <th>Distrito</th>
+                <th> </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let trabajador of trabajadores">
+                <td>{{trabajador.idTrabajador}}</td>
+                <td>{{trabajador.nroDocumento}}</td>
+                <td>{{trabajador.nombre}}</td>
+                <td>{{trabajador.apellido}}</td>
+                <td>{{trabajador.sexo}}</td>
+                <td>{{trabajador.distrito}}</td>
+                <td><a class="btn btn-warning" [routerLink]="['/trabajadores','editar',trabajador.idTrabajador]">Editar</a></td>
+            </tr>
+        </tbody>
+    </table>
+    <p *ngIf="!trabajadores || trabajadores.length <= 0">Sin trabajadores</p>
+</div>

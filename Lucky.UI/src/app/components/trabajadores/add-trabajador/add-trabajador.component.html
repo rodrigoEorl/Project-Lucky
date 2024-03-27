@@ -1,0 +1,55 @@
+<div class="container my-5">
+    <h1 class="nb-3">
+        Agregar trabajador
+    </h1>
+    <br/>
+    <div class="row">
+        <div class="col-6">
+            <form #form="ngForm" [formGroup]="reactiveForm" (ngSubmit)="addTrabajador()">
+                    <div class="mb-3">
+                      <label for="nroDocumento" class="form-label">Numero de documento</label>
+                      <input type="text" class="form-control" id="nroDocumento" 
+                      formControlName="nroDocumento"
+                      name="nroDocumento" [(ngModel)]="addTrabajadorRequest.nroDocumento">
+                      <div class="alert alert-danger mt-2" [hidden]="nroDocumento.valid || nroDocumento.pristine">
+                          Este campo es obligatorio</div>
+                      
+                    </div>
+                    <div class="mb-3">
+                      <label for="nombre" class="form-label">Nombres</label>
+                      <input type="text" class="form-control" id="nombre"
+                      formControlName="nombre"
+                      name="nombre" [(ngModel)]="addTrabajadorRequest.nombre">
+                      <div class="alert alert-danger mt-2" [hidden]="nombre.valid || nombre.pristine">
+                        Este campo es obligatorio</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="apellido" class="form-label">Apellidos</label>
+                      <input type="text" class="form-control" id="apellido"
+                      formControlName="apellido"
+                      name="apellido" [(ngModel)]="addTrabajadorRequest.apellido">
+                      <div class="alert alert-danger mt-2" [hidden]="apellido.valid || apellido.pristine">
+                        Este campo es obligatorio</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="sexo" class="form-label">Sexo</label>
+                      <input type="text" class="form-control" id="sexo"
+                      formControlName="sexo"
+                      name="sexo" [(ngModel)]="addTrabajadorRequest.sexo">
+                      <div class="alert alert-danger mt-2" [hidden]="sexo.valid || sexo.pristine">
+                        Este campo es obligatorio</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="distrito" class="form-label">Distrito</label>
+                      <input type="text" class="form-control" id="distrito"
+                      formControlName="distrito"
+                      name="distrito" [(ngModel)]="addTrabajadorRequest.distrito">
+                      <div class="alert alert-danger mt-2" [hidden]="distrito.valid || distrito.pristine">
+                        Este campo es obligatorio</div>
+                    </div>
+                    <button type="submit" class="btn btn-primary" [disabled]="reactiveForm.invalid">Guardar</button>
+            </form>
+
+        </div>
+    </div>
+</div>

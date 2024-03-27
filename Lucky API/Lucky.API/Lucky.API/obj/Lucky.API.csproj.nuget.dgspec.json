@@ -1,0 +1,80 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\rodri\\OneDrive\\Documentos\\UTP\\POSTULACION\\Lucky\\Lucky UI v2\\Lucky API\\Lucky.API\\Lucky.API\\Lucky.API.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\rodri\\OneDrive\\Documentos\\UTP\\POSTULACION\\Lucky\\Lucky UI v2\\Lucky API\\Lucky.API\\Lucky.API\\Lucky.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\rodri\\OneDrive\\Documentos\\UTP\\POSTULACION\\Lucky\\Lucky UI v2\\Lucky API\\Lucky.API\\Lucky.API\\Lucky.API.csproj",
+        "projectName": "Lucky.API",
+        "projectPath": "C:\\Users\\rodri\\OneDrive\\Documentos\\UTP\\POSTULACION\\Lucky\\Lucky UI v2\\Lucky API\\Lucky.API\\Lucky.API\\Lucky.API.csproj",
+        "packagesPath": "C:\\Users\\rodri\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\rodri\\OneDrive\\Documentos\\UTP\\POSTULACION\\Lucky\\Lucky UI v2\\Lucky API\\Lucky.API\\Lucky.API\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\rodri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.35, )"
+            },
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.2.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
